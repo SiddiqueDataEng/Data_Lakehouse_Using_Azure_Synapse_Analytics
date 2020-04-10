@@ -1,0 +1,17 @@
+{
+  "name": "ls_AzureDataLake",
+  "type": "Microsoft.Synapse/workspaces/linkedservices",
+  "properties": {
+    "type": "AzureBlobFS",
+    "annotations": [],
+    "typeProperties": {
+      "url": "https://<your-adls-account>.dfs.core.windows.net"
+    },
+    "connectVia": {
+      "type": "IntegrationRuntimeReference",
+      "referenceName": "AutoResolveIntegrationRuntime"
+    }
+  }
+}
+
+

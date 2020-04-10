@@ -1,0 +1,18 @@
+{
+  "scripts": [
+    { "name": "dedicated_1_taxi_zones_external_table", "path": "Files/01/demos/CodeFiles/Module 3 - Dedicated SQL Pool/1 - Taxi Zones - External Table.sql" },
+    { "name": "dedicated_2_yellow_taxis_external_table", "path": "Files/01/demos/CodeFiles/Module 3 - Dedicated SQL Pool/2 - Yellow Taxis - External Table.sql" },
+    { "name": "dedicated_3_write_to_data_lake", "path": "Files/01/demos/CodeFiles/Module 3 - Dedicated SQL Pool/3 - Write to Data Lake.sql" },
+    { "name": "dedicated_4_copy_taxi_zones", "path": "Files/01/demos/CodeFiles/Module 3 - Dedicated SQL Pool/4 - Copy TaxiZones.sql" },
+    { "name": "dedicated_5_table_distributions", "path": "Files/01/demos/CodeFiles/Module 3 - Dedicated SQL Pool/5 - Table Distributions.sql" },
+    { "name": "dedicated_6_compare_distribution_performance", "path": "Files/01/demos/CodeFiles/Module 3 - Dedicated SQL Pool/6 - Compare Distribution Performance.sql" },
+    { "name": "serverless_1_fhv_parquet", "path": "Files/01/demos/CodeFiles/Module 6 - Serverless SQL/1 - Serverless Query - FHVTaxis Parquet.sql" },
+    { "name": "serverless_2_taxi_zones_csv", "path": "Files/01/demos/CodeFiles/Module 6 - Serverless SQL/2- Serverless Query - TaxiZones CSV.sql" },
+    { "name": "serverless_3_create_external_table", "path": "Files/01/demos/CodeFiles/Module 6 - Serverless SQL/3 - Serverless Query - Create External Table.sql" },
+    { "name": "serverless_4_datamart_views", "path": "Files/01/demos/CodeFiles/Module 6 - Serverless SQL/4 - TaxisDataMart - Views.sql" },
+    { "name": "serverless_5_datamart_views_on_sparkdb", "path": "Files/01/demos/CodeFiles/Module 6 - Serverless SQL/5- TaxisDataMart Views on Spark DB.sql" },
+    { "name": "cosmos_2_query_cosmosdb_serverless", "path": "Files/01/demos/CodeFiles/Module 7 - Connected Servers/2- Serverless SQL - Query CosmosDB.sql" }
+  ]
+}
+
+

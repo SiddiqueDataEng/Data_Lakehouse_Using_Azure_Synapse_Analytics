@@ -1,0 +1,68 @@
+{
+  "name": "pl_IngestTransformPublish",
+  "type": "Microsoft.Synapse/workspaces/pipelines",
+  "properties": {
+    "activities": [
+      {
+        "name": "Copy_TaxiZones_CSV_to_Staging",
+        "type": "Copy",
+        "dependsOn": [],
+        "typeProperties": {
+          "source": {
+            "type": "DelimitedTextSource"
+          },
+          "sink": {
+            "type": "DelimitedTextSink"
+          }
+        },
+        "inputs": [
+          {
+            "referenceName": "ds_TaxiZonesCsv",
+            "type": "DatasetReference"
+          }
+        ],
+        "outputs": []
+      },
+      {
+        "name": "Notebook_Process_FHV_Data",
+        "type": "SynapseNotebook",
+        "dependsOn": [
+          {
+            "activity": "Copy_TaxiZones_CSV_to_Staging",
+            "dependencyConditions": ["Succeeded"]
+          }
+        ],
+        "typeProperties": {
+          "notebook": {
+            "referenceName": "nb_ProcessFHVData",
+            "type": "NotebookReference"
+          },
+          "parameters": {}
+        }
+      },
+      {
+        "name": "SQL_Create_External_Tables",
+        "type": "SqlPoolStoredProcedure",
+        "dependsOn": [
+          {
+            "activity": "Notebook_Process_FHV_Data",
+            "dependencyConditions": ["Succeeded"]
+          }
+        ],
+        "typeProperties": {
+          "storedProcedureName": "sp_LoadTaxiZones"
+        },
+        "linkedServiceName": {
+          "referenceName": "ls_SynapseSqlDedicated",
+          "type": "LinkedServiceReference"
+        }
+      }
+    ],
+    "parameters": {},
+    "annotations": [
+      "Course: Lakehouse", "Generated: Cursor"
+    ]
+  }
+}
+
+

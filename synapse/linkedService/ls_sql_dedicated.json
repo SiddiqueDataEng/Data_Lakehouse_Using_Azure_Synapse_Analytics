@@ -1,0 +1,13 @@
+{
+  "name": "ls_SynapseSqlDedicated",
+  "type": "Microsoft.Synapse/workspaces/linkedservices",
+  "properties": {
+    "type": "AzureSqlDW",
+    "annotations": [],
+    "typeProperties": {
+      "connectionString": "Data Source=<your-synapse-workspace>.sql.azuresynapse.net;Initial Catalog=<dedicated-pool-name>;Authentication=ActiveDirectoryMSI"
+    }
+  }
+}
+
+

@@ -1,0 +1,19 @@
+CREATE TABLE RateCodes
+(
+	RateCodeId INT,
+	RateCode VARCHAR(100),
+	IsApproved BIT
+)
+
+INSERT INTO RateCodes (RateCodeId, RateCode, IsApproved)
+VALUES
+(1, 'Standard Rate', 1),
+(2, 'JFK', 1),
+(3, 'Newark', 1),
+(4, 'Westchester', 0),
+(5, 'Negotiated fare', 1),
+(6, 'GroupRide', 1)
+
+
+SELECT * FROM RateCodes
+

@@ -1,0 +1,28 @@
+{
+  "name": "ds_TaxiZonesCsv",
+  "type": "Microsoft.Synapse/workspaces/datasets",
+  "properties": {
+    "linkedServiceName": {
+      "type": "LinkedServiceReference",
+      "referenceName": "ls_AzureDataLake"
+    },
+    "annotations": [],
+    "type": "DelimitedText",
+    "schema": [],
+    "typeProperties": {
+      "columnDelimiter": ",",
+      "quoteChar": "\"",
+      "escapeChar": "\\",
+      "encodingName": "utf-8",
+      "firstRowAsHeader": true,
+      "location": {
+        "type": "AzureBlobFSLocation",
+        "fileSystem": "datalake",
+        "folderPath": "Files/01/demos/DataFiles/DataLakeFiles/TaxiZones",
+        "fileName": null
+      }
+    }
+  }
+}
+
+

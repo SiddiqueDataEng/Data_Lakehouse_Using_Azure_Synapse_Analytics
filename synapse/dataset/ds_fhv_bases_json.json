@@ -1,0 +1,23 @@
+{
+  "name": "ds_FhvBasesJson",
+  "type": "Microsoft.Synapse/workspaces/datasets",
+  "properties": {
+    "linkedServiceName": {
+      "type": "LinkedServiceReference",
+      "referenceName": "ls_AzureDataLake"
+    },
+    "annotations": [],
+    "type": "Json",
+    "schema": [],
+    "typeProperties": {
+      "location": {
+        "type": "AzureBlobFSLocation",
+        "fileSystem": "datalake",
+        "folderPath": "Files/01/demos/DataFiles/DataLakeFiles",
+        "fileName": "FhvBases.json"
+      }
+    }
+  }
+}
+
+

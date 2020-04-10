@@ -1,0 +1,23 @@
+{
+  "name": "ds_YellowTaxisParquet",
+  "type": "Microsoft.Synapse/workspaces/datasets",
+  "properties": {
+    "linkedServiceName": {
+      "type": "LinkedServiceReference",
+      "referenceName": "ls_AzureDataLake"
+    },
+    "annotations": [],
+    "type": "Parquet",
+    "schema": [],
+    "typeProperties": {
+      "location": {
+        "type": "AzureBlobFSLocation",
+        "fileSystem": "datalake",
+        "folderPath": "Files/01/demos/DataFiles/DataLakeFiles",
+        "fileName": "YellowTaxis_201911.parquet"
+      }
+    }
+  }
+}
+
+

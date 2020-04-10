@@ -1,0 +1,24 @@
+# Large/irrelevant assets
+*.mp4
+*.pdf
+*.pptx
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+Files.rar
+Files/**/StorageFiles/*.csv
+*.parquet
+config/github.env
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+
+siddique.sh
+github_push.py

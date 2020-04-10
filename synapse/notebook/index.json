@@ -1,0 +1,26 @@
+{
+  "notebooks": [
+    {
+      "name": "nb_Exploration",
+      "sourcePath": "Files/01/demos/CodeFiles/Module 4 - Synapse Spark Pool/1 - Exploration Notebook.ipynb"
+    },
+    {
+      "name": "nb_ProcessFHVData",
+      "sourcePath": "Files/01/demos/CodeFiles/Module 4 - Synapse Spark Pool/2 - Process FHV Data - Development.ipynb"
+    },
+    {
+      "name": "nb_ReadFromDedicatedSqlPool",
+      "sourcePath": "Files/01/demos/CodeFiles/Module 4 - Synapse Spark Pool/3 - Read from Dedicated SQL Pool.ipynb"
+    },
+    {
+      "name": "nb_QueryCosmosDb",
+      "sourcePath": "Files/01/demos/CodeFiles/Module 7 - Connected Servers/1- Query CosmosDB.ipynb"
+    },
+    {
+      "name": "nb_WriteCosmosDb",
+      "sourcePath": "Files/01/demos/CodeFiles/Module 7 - Connected Servers/3- Write to CosmosDB.ipynb"
+    }
+  ]
+}
+
+

@@ -1,0 +1,13 @@
+{
+  "name": "ls_SynapseSqlServerless",
+  "type": "Microsoft.Synapse/workspaces/linkedservices",
+  "properties": {
+    "type": "AzureSqlDatabase",
+    "annotations": [],
+    "typeProperties": {
+      "connectionString": "Server=tcp:<your-synapse-workspace>-ondemand.sql.azuresynapse.net,1433;Database=master;Authentication=ActiveDirectoryMSI"
+    }
+  }
+}
+
+
