@@ -11,6 +11,8 @@ Files.rar
 Files/**/StorageFiles/*.csv
 *.parquet
 config/github.env
+*.txt
+.logs/
 
 # OS/editor noise
 .DS_Store
